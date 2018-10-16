@@ -10,7 +10,7 @@ Constructor Assignment for Node.js
 
 
 - What is the goal of this project?
-  * Demonstrates the use of JavaScrtip Constructors through the use of the es6 CLASS format. 
+  * Demonstrates the use of JavaScript Constructors through the use of the es6 "Class" format. 
   * Shows how module.exports and dependant files are linked
   * To demonstrate basic understanding of node.js and it's file structure setup, which includes: package.json, node_modules and .gitignore. 
   

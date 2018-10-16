@@ -78,7 +78,8 @@ function winChecker() {
 		console.log("You have " + tries + " tries left");
 		getGuess();
 	} else {
-		console.log("Sorry. No more tries left. The Secret Word was: " + secretWord.word)
+		console.log("Sorry. No more tries left. The Secret Word was: " + secretWord.word);
+		playAgain();
 	}
 
 }
@@ -99,6 +100,7 @@ function playAgain() {
 			secretWord.guessedLtrs = [];
 			secretWord.display = [];
 			guessedLetters = []
+			tries = 10;
 			wordGenerator();
 		} else {
 			console.log(chalk.blue("That's cool. Thanks for playing!"));

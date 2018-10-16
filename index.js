@@ -1,5 +1,6 @@
 let Word = require("./Word");
 let inquirer = require("inquirer");
+let chalk = require("chalk");
 
 let words = ["DRACULA", "WOLFMAN", "MUMMY"];
 let guessedLetters = []
@@ -47,9 +48,9 @@ function getGuess() {
 			guessedLetters.push(ltr);
 
 			if (secretWord.splitLetters.includes(ltr)) {
-				console.log("That's Right")
+				console.log(chalk.green("That's Right"));
 			} else {
-				console.log("Nope, Try again")
+				console.log(chalk.red("Nope, Try again"))
 				tries--;
 			}
 		}
@@ -60,7 +61,7 @@ function getGuess() {
 function winChecker() {
 
 	if (!secretWord.display.includes("_")) {
-		console.log("You Got it!! The Secret Word was: " + secretWord.word)
+		console.log(chalk.green("You Got it!! The Secret Word was: " + secretWord.word));
 		playAgain()
 	} else if (tries > 0) {
 		console.log("You've guessed: " + guessedLetters.join(", "))
@@ -90,7 +91,7 @@ function playAgain() {
 			guessedLetters = []
 			wordGenerator();
 		} else {
-			console.log("That's cool. Thanks for playing!")
+			console.log(chalk.blue("That's cool. Thanks for playing!"));
 		}
 
 	});

@@ -17,6 +17,6 @@ Constructor Assignment for Node.js
 - What is the direct link to the project?
   * The code is hosted here: [Constructor-Word-Guess](https://github.com/JoseaphMankin/Constructor-Word-Guess).
 - What is the direct link to the demo?
-  * A Video Demo is hosted here: [Constructor-Word-Demo](https://drive.google.com/file/d/1ExJjO7z56P4ONLkNisotF9xFKu1xiNdF/view).
+  * A Video Demo is hosted here: [Constructor-Word-Demo](https://drive.google.com/file/d/1FAfXrobhHYCwSbE2FWZdRqIFsmTA_i_U/view).
 
   

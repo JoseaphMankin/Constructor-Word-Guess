@@ -49,7 +49,7 @@ class Word {
             } 
         
 
-        console.log(this.display.join(" "));
+        console.log(this.display.join(" ") + "\n");
     
     }
 }

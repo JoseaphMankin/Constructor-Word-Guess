@@ -4,7 +4,7 @@ class Word {
     constructor(word) {
         this.word = word;
         // An array of new Letter objects representing the letters of the underlying word
-        this.splitLetters = ["T", "E", "S", "T", "E", "R"];
+        this.splitLetters = [];
         this.convertedLtrs = []
         this.guessedLtrs = [];
         this.display =[];
@@ -28,18 +28,18 @@ class Word {
 //This should call the function on each letter object (the first function defined in Letter.js) 
 //that displays the character or an underscore and concatenate those together.
 
-    stringer(){
-        this.display = [];
-        for (let i = 0; i < this.convertedLtrs.length; i++){
-            // let ltr = this.splitLetters[i];
-            // console.log(ltr);
-            var ltr = new Letter(this.splitLetters[i]);
-            // console.log(ltr);
-            this.display.push(ltr.switcher());
-        }
-        console.log(this.display.join(" "));
+    // stringer(){
+    //     this.display = [];
+    //     for (let i = 0; i < this.convertedLtrs.length; i++){
+    //         // let ltr = this.splitLetters[i];
+    //         // console.log(ltr);
+    //         var ltr = new Letter(this.splitLetters[i]);
+    //         // console.log(ltr);
+    //         this.display.push(ltr.switcher());
+    //     }
+    //     console.log(this.display.join(" "));
 
-    }
+    // }
 
 // A function that takes a character as an argument and calls the guess function on each letter object 
 //(the second function defined in Letter.js)
